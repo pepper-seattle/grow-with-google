@@ -43,18 +43,21 @@ h3 {
 }
 
 .mainImage {
-  padding: 8px 0 8px;
-  width: 100%;
+  text-align: center;
 }
 
-.featuredWork h1 {
-  margin: 0 0 10px 10px;
+.mainImage img {
+  padding: 8px 0 8px;
+  max-width: 100%;
+}
+
+.featuredTitle {
+  background: lightblue;
 }
 
 .featuredWork {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
 }
 
@@ -62,4 +65,43 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 15px 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+  height: 200px;
+}
+
+.cardTitle {
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .featuredTitle {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 876px) {
+  .name h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .featuredWork {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .shield {
+    max-width: 50px;
+  }
 }
